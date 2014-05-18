@@ -7,6 +7,6 @@ public class LengthPrinter
 
         //complete the code to find the length of the string
         //your code here
-
+        System.out.println(course.length());
     }
 }

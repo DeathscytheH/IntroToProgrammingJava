@@ -21,6 +21,7 @@ public class TopSecret
         // TODO: Write TOP SECRET on the front face of the box.
         // The top left corner of the front face should be the
         // same as the top left corner of the text.
-       
+        Text _topSecret=new Text(20,30,"TOP SECRET");
+        _topSecret.draw();
     }
 }

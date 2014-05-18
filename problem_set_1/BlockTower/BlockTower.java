@@ -17,5 +17,22 @@ public class BlockTower
    {
        //bottom row
        Rectangle box = new Rectangle(20, 70, 40, 30);
+       Rectangle box1 = new Rectangle(60, 70, 40, 30);              
+       Rectangle box2 = new Rectangle(100, 70, 40, 30);
+       Rectangle box3 = new Rectangle(40, 40, 40, 30);
+       Rectangle box4 = new Rectangle(80, 40, 40, 30);
+       Rectangle box5 = new Rectangle(60, 10, 40, 30);
+       box.setColor(Color.BLUE);
+       box1.setColor(Color.MAGENTA);
+       box2.setColor(Color.CYAN);
+       box3.setColor(Color.RED);
+       box4.setColor(Color.PINK);
+       box5.setColor(new Color(125,125,255));
+       box.fill();       
+       box1.fill();       
+       box2.fill();
+       box3.fill();
+       box4.fill();
+       box5.fill();
    }
 }
