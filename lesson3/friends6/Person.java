@@ -30,6 +30,8 @@ public class Person
     public void mutualUnfriend(Person nonFriend)
     {
       // complete this method
+      this.unfriend(nonFriend);
+      nonFriend.unfriend(this);
     }
 
     public void addFriend(Person friend)

@@ -3,6 +3,8 @@ public class Person
 {
     private String name;
     private String friends;
+    private int x;
+    private int y;
 
     // TODO Part 1: Create two additional instance int variables called x and y
     // to store the values of xCoord and yCoord variables that are passed
@@ -11,13 +13,16 @@ public class Person
     // For example:
     // private int x;
 
-    public Person (String aName, String pictureName, int xCoord, int yCoord)
+    public Person (String name, String pictureName, int x, int y)
     {
-        name = aName;
+        this.name = name;
         friends = "";
         Picture picture = new Picture(pictureName);
-        picture.translate(xCoord, yCoord);
+        this.x= x;
+        this.y= y;
+        picture.translate(x,y);
         picture.draw();
+
         // TODO Part 2:
         // assign xCoord and yCoord to the x and y instance variables that you
         // created above
@@ -34,6 +39,16 @@ public class Person
         return friends;
    }
 
+   public int getX()
+   {
+    return x;
+   }
+   
+   public int getY()
+   {
+    return y;
+   }
+   
     public void addFriend(Person friend)
     {
         friends = friends + " " + friend.name;
@@ -48,6 +63,8 @@ public class Person
         // To draw a small circle, 1st, create a SmallCircle object. For example:
         // SmallCircle circle = new SmallCircle(x-position, y-position);
         //
+        SmallCircle circle=new SmallCircle(x,y);
+        circle.fill();
         // and the draw the circle by calling the fill() function. For example:
         // circle.fill();
         //
@@ -58,6 +75,8 @@ public class Person
         // Line someLine = new Line (startingXPosition, startingYPosition, endingXPosition, endingYPosition);
         // line.draw();
         //
+        Line line=new Line(x,y,friend.getX(), friend.getY());
+        line.draw();
         // HINTS:
         // a) startXPosition and startYPosition are the x and y position of this person object
         // b) endingXPOsition and endingYPosition are the x and y position of the friend objec

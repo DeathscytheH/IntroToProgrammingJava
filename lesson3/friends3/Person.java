@@ -9,10 +9,13 @@ public class Person
     // 1) String pictureName
     // 2) int xCoord
     // 3) int yCoord
-    public Person (String aName, ...)
+    public Person (String aName, String pictureName, int xCoord, int yCoord)
     {
         name = aName;
         friends = "";
+        Picture picture = new Picture(pictureName);
+        picture.translate(xCoord, yCoord);
+        picture.draw();
 
         // TODO #2: Fill in the rest of this constructor
         //
@@ -23,6 +26,7 @@ public class Person
         // You can move the picture object by calling the translate method.
         //
         // The last step is to draw the picture.
+        
     }
 
    // This function return the friends of this Person object
