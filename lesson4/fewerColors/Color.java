@@ -14,6 +14,9 @@ public class Color
     {
         // TODO: Change the values for red, green, and blue
         // to one of the following: 0, 51, 102, 153, 204, 255
+        red=(red+25)/51*51;
+        green=(green+25)/51*51;
+        blue=(blue+25)/51*51;
     }
 
     /**

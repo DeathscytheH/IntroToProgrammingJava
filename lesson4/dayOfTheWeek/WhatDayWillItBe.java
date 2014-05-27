@@ -12,7 +12,8 @@ public class WhatDayWillItBe
         // January 1, 1900 was a Monday
         // Compute the number of days from that day until the birthday
         // Compute the weekday: 0 - Sunday, 1 - Monday, ..., 6 - Saturday
-
+        Day refday=new Day(1900,1,1);
+        int weekday = ( birthday.daysFrom(refday) +1) %7;
         System.out.print("Weekday: ");
         System.out.println(weekday);
     }

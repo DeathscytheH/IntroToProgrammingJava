@@ -12,6 +12,6 @@ public class CheckerBoardPainter
      */
     public int getColor(int row, int col)
     {
-
+        return (row+col)%2==0 ? 0:1;
     }
 }
