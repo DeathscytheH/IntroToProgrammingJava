@@ -33,6 +33,8 @@ public class Book
         // Locate the period of the first sentence
         // Return the substring consisting of everything after that period up to
         // the second period
+        int endOfSentence = bookText.indexOf(".",getFirstSentence().length());
+        return bookText.substring(getFirstSentence().length()+1, endOfSentence + 1);
     }
 
     /**

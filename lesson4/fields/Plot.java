@@ -23,8 +23,16 @@ public class Plot
     {
         // TODO: Using the formulas that Sara developed, compute
         // the total number of rows, then
+        int diameter=2*radius;
+        int numberRow = (int) (((length-diameter)/(radius*Math.sqrt(3)))+1);
         // the number of even and odd rows,
+        int colOddRow=(width/diameter);
+        int colEvenRow=((width-radius)/diameter);
         // the number of columns in each even and odd row,
+        int evenRow= (numberRow/2);
+        int oddRow=((numberRow+1)/2);
         // and finally the total number of fields
+        int numberOfFields=colEvenRow*evenRow+colOddRow*oddRow;
+        return numberOfFields;
     }
 }

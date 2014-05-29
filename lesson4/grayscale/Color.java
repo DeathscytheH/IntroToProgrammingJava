@@ -22,6 +22,11 @@ public class Color
         // green - 0.7152
         // blue - 0.0722
 
+        int y= (int) (0.2126*red+0.7152*green+0.0722*blue);
+        red=y;
+        green=y;
+        blue=y;
+
 
     }
 

@@ -23,7 +23,17 @@ public class Book
         // TODO: Complete this method
         // You will want to use the fact sheet linked in the instructor comments.
         // Which string method do you want to use?
+        return bookText.length();
     }
+    
+    public int firstOccurrenceOfMadHatter()
+    {
+        // TODO: Complete this method
+        //
+        // Check the fact sheet. There is a String function
+        // that can do this for you.
+        return bookText.indexOf("Mad Hatter");
+    }    
 
     /**
      * A method to help read the book out of the file.

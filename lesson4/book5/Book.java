@@ -20,6 +20,11 @@ public class Book
     public int occurrencesOfAlice()
     {
         // TODO: Find the number of times the word "Alice" occurs in this book
+        int len=bookText.length();
+        int al="Alice".length();
+
+        int lenSinAlice=bookSinAlice.length();
+        return (len-lenSinAlice)/al;
     }
 
     /**
@@ -42,6 +47,7 @@ public class Book
         // Locate the period of the first sentence
         // Return the substring consisting of everything after that period up to
         // the second period
+        return "";
     }
 
     /**

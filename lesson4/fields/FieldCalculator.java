@@ -17,5 +17,6 @@ public class FieldCalculator
         // Use the equations from the last few questions
         // and the mathematical operations you've learned in this lesson
         // You've done an example by hand. Now code it up!
+        return 0;
     }
 }

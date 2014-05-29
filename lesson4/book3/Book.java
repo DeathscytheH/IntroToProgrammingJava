@@ -20,6 +20,7 @@ public class Book
     public String getFirstSentence()
     {
         // TODO: Return the first sentence
+        return bookText.substring(0,bookText.indexOf(".")+1);
     }
 
     /**

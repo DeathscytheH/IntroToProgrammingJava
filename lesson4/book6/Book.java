@@ -21,6 +21,9 @@ public class Book
     public int occurrencesOf(String word)
     {
         // TODO: Complete this method
+        int length = bookText.length();
+        int lengthWithoutWord = bookText.replace(word, "").length();
+        return (length - lengthWithoutWord) / word.length();
     }
 
     /**
@@ -55,6 +58,7 @@ public class Book
         // Locate the period of the first sentence
         // Return the substring consisting of everything after that period up to
         // the second period
+        return "";
     }
 
     /**
