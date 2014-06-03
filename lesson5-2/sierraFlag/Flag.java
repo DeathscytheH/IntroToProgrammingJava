@@ -10,8 +10,14 @@ public class Flag
     public Color getColorAt(int x, int y)
     {
         Color c;
-        if ()
-
+        if (y>= height/5 && y<height*4/5)
+        {
+            c=Color.BLUE;
+        }
+        else
+        {
+            c=Color.YELLOW;
+        }
             // TODO: Write the if/else statement to determine if a pixel should be blue or white.
             return c;
     }

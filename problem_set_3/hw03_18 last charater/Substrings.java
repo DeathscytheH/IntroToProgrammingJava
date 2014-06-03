@@ -13,6 +13,6 @@ public class Substrings
    public String lastCharacter(String text)
    {
        //your code goes here
-
+       return text.substring(text.length() - 1);
    }
 }

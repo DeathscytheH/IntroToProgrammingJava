@@ -13,6 +13,6 @@ public class Substrings
    public String firstCharacter(String text)
    {
        //your code goes here
-
+       return text.substring(0, 1);
    }
 }

@@ -8,7 +8,22 @@ public class Flag
 
     public Color getColorAt(int x, int y)
     {
+        Color c;
+        c=Color.GREEN;
+        if (y< height/5 || y>=height*4/5)
+        {
+            c=Color.BLUE;
+        }
+        if(y>=height/5 && y<height*4/5)
+        {
+            c=Color.WHITE;
+        }
+        if(y>=height*2/5 && y<height*3/5)
+        {
+            c=Color.RED;
+        }
         // TODO: write code to determin if the pixel at x, y should be blue, red or white
+        return c;
     }
 
     public Flag(int width, int height)

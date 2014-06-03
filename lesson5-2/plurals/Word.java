@@ -24,8 +24,29 @@ public class Word
         //  isConsonant
         //  is
         // methods from below.
+        String plurals="";
+        int last = letters.length() - 1;
+        
+        if(letters.substring(last).equals("y") && isConsonant(last-1))
+        {
+            plurals=letters.substring(0,last)+"ies";
+        }
+        else if(letters.substring(last).equals("y") && isVowel(last-1))
+        {
+            plurals=letters+"s";
+        }
+        else if(letters.substring(last).equals("o") || letters.substring(last).equals("s") || letters.substring(last-1).equals("sh") || letters.substring(last-1).equals("ch"))
+        {
+            plurals=letters+"es";
+        }
+        else
+        {
+            plurals=letters+"s";
+        }
+        return plurals;
+        
     }
-
+    
     /**
        Tests whether the ith letter is a vowel.
        @param i the index of the letter to test

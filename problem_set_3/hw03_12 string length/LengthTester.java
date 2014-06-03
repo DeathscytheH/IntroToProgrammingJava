@@ -12,6 +12,6 @@ public class LengthTester
    public int stringLength(String str)
    {
        //your code goes here
-
+       return str.length();
    }
 }

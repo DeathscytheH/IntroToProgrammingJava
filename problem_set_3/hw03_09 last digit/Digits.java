@@ -14,7 +14,7 @@ public class Digits
     public int lastDigit(int number)
     {
         //your code goes here.
-
+        int last = number%10;
         return last;
     }
 }
