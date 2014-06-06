@@ -32,20 +32,24 @@ public class CreditCard
          *     The card number is valid
          */
         long n = cardNumber;
+        boolean condition = false;
         int sum = 0;
-        int count = 0;
-
+ 
         // TODO this is the code from the last question. you can use it
         // as a starting point, but you will need to change most of it.
         while (n > 0)
         {
-
-            int digit = (int)(n % 10); //
-            sum = sum + digit;
+            condition = !condition;
+            int digit = (int)(n % 10);
+            if (condition)      
+                sum = sum + digit;
+            else if (digit < 5) 
+                sum = sum + 2 * digit;
+            else                
+                sum = sum + 2 * digit - 9;
             n = n/10;
         }
-
-
-        return false;
+   
+        return sum % 10 == 0;
     }
 }
