@@ -7,15 +7,13 @@ public class Twitterizer
      */
     public String shorten(String longPost) 
     {
-        String shortPost = "";
-        for (int i = 0; i < longPost.length(); i++)
-        {
-            if (!"aeiouAEIOU".contains(longPost.substring(i, i+1)))
-            {
-                shortPost = shortPost + longPost.substring(i, i+1);
-            }
+        String s="";
+        for (int i=0;i<longPost.length();i++){
+            if(!"aeiouAEIOU".contains(longPost.substring(i,i+1))){
+                s=s+longPost.substring(i,i+1);
+            }            
         }
-        return shortPost;
+        return s;
     }
     
     /**
@@ -24,6 +22,10 @@ public class Twitterizer
      */
     public String reverse(String post)
     {
-       
+        String s="";
+        for ( int i = post.length() - 1 ; i >= 0 ; i-- ){
+            s = s + post.charAt(i);
+        }
+        return s;
     }
 }

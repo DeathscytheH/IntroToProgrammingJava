@@ -8,5 +8,12 @@ public class Twitterizer
     public String shorten(String longPost) 
     {
         // YOUR CODE HERE
+        String s="";
+        for (int i=0;i<longPost.length();i++){
+            if(!"aeiouAEIOU".contains(longPost.substring(i,i+1))){
+                s=s+longPost.substring(i,i+1);
+            }            
+        }
+        return s;        
     }
 }
